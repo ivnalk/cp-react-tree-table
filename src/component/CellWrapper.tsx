@@ -20,9 +20,15 @@ export default class CellWrapper extends Component<CellWrapperProps, {}> {
   render() {
     const { row, renderCell, grow, basis } = this.props;
 
+    if (row.data.style !== undefined) {
+      var ESTILO_CAMELIA: CSSProperties = row.data.style;
+    }else{
+      var ESTILO_CAMELIA: CSSProperties = {}
+    }
+
     return (
       <div className={`cp_tree-table_cell`}
-        style={{ ...STYLE_COLUMN, flexGrow: grow, flexBasis: basis }}>
+        style={{ ...ESTILO_CAMELIA, ...STYLE_COLUMN, flexGrow: grow, flexBasis: basis }}>
         { renderCell(row) }
       </div>
     );
@@ -35,4 +41,5 @@ const STYLE_COLUMN: CSSProperties = {
   position: 'relative',
   overflow: 'hidden',
   width: '100%',
+  minHeight: '30px',
 };
