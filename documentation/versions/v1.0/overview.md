@@ -32,7 +32,7 @@ const MOCK_DATA = [
     data: { name: 'Company I', expenses: '105,000', employees: '22', contact: 'Makenzie Higgs' },
     children: [
       { 
-        data: { name: 'Department 1', expenses: '75,000', employees: '18', contact: 'Florence Carter' },
+        data: { name: 'Department 1', expenses: '75,000', employees: '18', contact: 'Florence Carter', class: 'myCSS_Class' },
       },
       ...
     ]

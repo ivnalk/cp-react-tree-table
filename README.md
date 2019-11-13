@@ -1,12 +1,12 @@
-# cp-react-tree-table
+# ivnalk/cp-react-tree-table
 [![npm version](https://badge.fury.io/js/cp-react-tree-table.svg)](https://badge.fury.io/js/cp-react-tree-table)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/constantin-p/cp-react-tree-table/raw/master/LICENSE)
 
-A fast, efficient tree table component for ReactJS.
+A fork from a fast, efficient tree table component for ReactJS.
 
-[Live Demo](https://constantin-p.github.io/cp-react-tree-table) | [Documentation](https://constantin.software/cp-react-tree-table/docs/)
+[Real Live Demo](https://constantin-p.github.io/cp-react-tree-table) | [Real Documentation](https://constantin.software/cp-react-tree-table/docs/)
 
-[Documentation v0.x](https://github.com/constantin-p/cp-react-tree-table/tree/ver/0.x)
+[Real Documentation v0.x](https://github.com/constantin-p/cp-react-tree-table/tree/ver/0.x)
 
 
 ### Installation
@@ -14,28 +14,24 @@ A fast, efficient tree table component for ReactJS.
 ###### [Method A] Using [npm](https://www.npmjs.com):
 
 ```sh
-npm install --save cp-react-tree-table
+npm install --save @ivnalk/cp-react-tree-table
 ```
-
-###### [Method B] Using [yarn](https://yarnpkg.com):
-
-```sh
-yarn add cp-react-tree-table
-```
-
 
 ### Usage
 
-Import the `cp-react-tree-table` module:
+Import the `@ivnalk/cp-react-tree-table` module:
 
 ```javascript
-import { TreeTable, TreeState } from 'cp-react-tree-table';
+import { TreeTable, TreeState } from '@ivnalk/cp-react-tree-table';
 ```
 
 ### Mejoras de Estilo
-Se implementó la opción de agregar estilos css en cada row de la tabla.
-Para integrar un estilo se deben de enviar en un objeto "style"  en los datos del treetable.
-row.data.style = [{ 'backgroundColor': 'red'}]
+Se implementó la opción de agregar clases CSS en cada celda de la tabla.
+
+Para integrar una clase CSS se debe de enviar en los datos del treetable
+```javascript
+data: { name: 'Department 1', expenses: '75,000', employees: '18', contact: 'Florence Carter', class: 'myCSS_Class' },
+```
 
 ## License
 
