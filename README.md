@@ -32,6 +32,10 @@ Import the `cp-react-tree-table` module:
 import { TreeTable, TreeState } from 'cp-react-tree-table';
 ```
 
+### Mejoras de Estilo
+Se implementó la opción de agregar estilos css en cada row de la tabla.
+Para integrar un estilo se deben de enviar en un objeto "style"  en los datos del treetable.
+row.data.style = [{ 'backgroundColor': 'red'}]
 
 ## License
 
